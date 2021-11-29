@@ -296,7 +296,7 @@ index 9b29264..af93cad 100644
  	return numspecs;
  }
  
-@@ -1496,14 +1503,17 @@ xdrawglyph(Glyph g, int x, int y)
+@@ -1496,15 +1503,18 @@ xdrawglyph(Glyph g, int x, int y)
  }
  
  void
@@ -304,6 +304,7 @@ index 9b29264..af93cad 100644
 +xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og, Line line, int len)
  {
  	Color drawcol;
+	XRenderColor colbg;
  
  	/* remove the old cursor */
  	if (selected(ox, oy))

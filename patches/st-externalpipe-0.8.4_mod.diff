@@ -82,10 +82,9 @@ diff --git a/st.h b/st.h
 index 3d351b6..392b64e 100644
 --- a/st.h
 +++ b/st.h
-@@ -81,6 +81,7 @@ void die(const char *, ...);
- void redraw(void);
- void draw(void);
- 
+@@ -81,5 +81,6 @@ void die(const char *, ...);
+ void kscrolldown(const Arg *);
+ void kscrollup(const Arg *);
 +void externalpipe(const Arg *);
  void printscreen(const Arg *);
  void printsel(const Arg *);
